@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Nunito", sans-serif;
+    --cor1:rgb(255, 254, 168);
+    --cor2:rgb(59, 85, 21);
+}
+
+
+* {
+    margin: 0px;
+    padding: opx;
+}
+
+html, body {
+    min-height: 100%vh;
+}
+header {
+    background-color: var(--cor2);
+    color: rgb(255, 254, 168);  
+}
+header > p{
+    padding-bottom: 15px;
+}
+.link{
+    text-decoration: none;
+    color: rgb(168, 166, 45); 
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;
+    
+}
+.link:hover{
+    text-decoration: underline;
+    color: wheat;
+    background-color: var(--cor2);
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 4em;   
+    text-align: center; 
+}
+header > h2{
+    padding-bottom: 60px;
+    font-size: 1.5em;
+    text-align: center; 
+}
+
+
+
+
+section {
+    padding: 20vh 0vh 20vh 30px;
+    line-height: 2em;
+    font-size: 1.5em;
+    text-align: justify;
+}
+section > p{
+    font-family: var(--font2);
+    
+}
+section.normal{
+    background-color: white;
+    color: black;
+    min-width:70% ;
+    max-width: 30%;
+    
+    
+}
+section.img{
+    background-color: slategrey;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0 black;
+    background-attachment: fixed;
+    height: auto;
+    
+}
+section.img >  p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.336);
+    font-size: 1.3em;
+    
+}
+section.video{
+    background-color: rgb(236, 255, 152);
+    color: white;
+    background-attachment: fixed;
+}
+#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+#img02{
+    background-image: url(imagens/android-chrome-192x192.png);
+    background-position: right center;
+    background-size: cover;
+}
+
+footer{
+    background-color: rgb(59, 85, 21) ;
+    text-align: right;
+    color: var(--cor1);
+    padding: 20px 0px;
+    margin-top: 30px;
+}
+
+.img-cnt {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente as imagens */
+    gap: 20px; /* Espaço entre os contêineres de imagem */
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    
+}
+.image-item {
+    text-align: center; /* Centraliza a imagem e a legenda */
+    flex: 1 1 calc(33.333% 20px); /* Ajusta a largura das imagens e considera o espaço entre elas */
+    margin: 10px; /* Espaço ao redor de cada contêiner de imagem */
+}
+
+.image-item img {
+    max-width: 250px; /* Define a largura máxima para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #ccc; /* Borda fina ao redor das imagens */
+    padding: 5px; /* Espaço interno das imagens */
+    background-color: #fff; /* Fundo branco para as imagens */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.image-item img:hover {
+    transform: translateY(-8px); /* Move a imagem 4 pixels para cima */
+}
+
+.caption {
+    margin-top: 10px; /* Espaço entre a imagem e a legenda */
+    font-size: 14px; /* Tamanho da fonte da legenda */
+    color: #333; /* Cor da fonte da legenda */
+}
+aside > h3 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+aside > ul  {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0';
+    line-height: 2em;
+}
+aside{
+    background-image: linear-gradient(to bottom, rgb(185, 185, 0) , var(--cor2));
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.397);
+    margin:  auto;
+    max-width: 1000px;    
+    
+}

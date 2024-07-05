@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagens/girasol-123.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(5, 71, 5);
+    text-align: center;
+    background-image: linear-gradient(yellow , green);
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    margin: 10px 0px 10px 100px;
+    color: darkgreen ;
+}
+section{
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    max-width: 800px;
+    gap:10px;
+
+}
+button{
+    background-color: green;
+    color: yellow;
+    padding: 4px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.74);
+    border-radius: 15px !important;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);
+}
+button:hover{
+    background-color: rgb(23, 165, 23);
+    color: rgb(245, 245, 55);
+    cursor: pointer;
+    
+}
+main > .info{
+    margin: 20px 0px 20px 100px;
+    padding: 20px;
+    display: none;
+    background-color: rgba(250, 238, 72, 0.836);
+    max-width: 600px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    border: 2px black;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+
+

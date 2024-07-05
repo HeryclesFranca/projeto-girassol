@@ -20,9 +20,10 @@ html, body {
 header {
     background-color: var(--cor2);
     color: rgb(255, 254, 168);  
+
 }
 header > p{
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .link{
     text-decoration: none;
@@ -30,7 +31,10 @@ header > p{
     padding: 8px;
     border: 2px solid;
     border-radius: 5px;
-    
+}
+.button{
+    margin: 15px;
+    background-color: var(--cor2);
 }
 .link:hover{
     text-decoration: underline;
@@ -48,8 +52,6 @@ header > h2{
     font-size: 1.5em;
     text-align: center; 
 }
-
-
 
 
 section {

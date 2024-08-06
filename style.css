@@ -72,17 +72,13 @@ section.img{
     box-shadow: inset 6px 6px 13px 0 black;
     background-attachment: fixed;
     height: auto;    
+    
 }
 section.img >  p{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.336);
     font-size: 1.3em;
     
-}
-section.video{
-    background-color: rgb(236, 255, 152);
-    color: white;
-    background-attachment: fixed;
 }
 #img01{
     background-image: url(imagens/background001.jpg);
@@ -140,7 +136,7 @@ aside > ul  {
 aside{
     background-image: linear-gradient(to bottom, rgb(185, 185, 0) , var(--cor2));
     border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.397);
+    box-sizing: 3px 3px 8px rgba(0, 0, 0, 0.397);
     margin:  auto;
     max-width: 1000px;       
 }
@@ -153,6 +149,9 @@ footer{
 }
 
 @media ( max-width: 768px){
+    p{
+        line-height: 2em;
+    }
     section {
         padding: 10px;
     }
@@ -167,12 +166,21 @@ footer{
         width: 90vw;
         text-align: justify;
         font-size: 16px;
+        padding: 30px 10px;
+        
     }
     p.button{
         display:flex;
         flex-wrap: wrap;
     }
-    .img{
-        height: 400px!important;
+    section.img{
+        height: 400px;
+        
+    }
+    section.img >  p{
+        background-color: transparent;
+    }
+    .caption  {
+        text-align: center !important;
     }
 }

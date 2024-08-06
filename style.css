@@ -93,6 +93,7 @@ section.video{
     background-image: url(imagens/android-chrome-192x192.png);
     background-position: right center;
     background-size: cover;
+
 }
 .img-cnt {
     display: flex;
@@ -122,9 +123,9 @@ section.video{
 }
 
 .caption {
-    margin-top: 10px; /* Espaço entre a imagem e a legenda */
+    margin-top: 5px; /* Espaço entre a imagem e a legenda */
     font-size: 14px; /* Tamanho da fonte da legenda */
-    color: #333; /* Cor da fonte da legenda */
+    color: #333; 
 }
 aside > h3 {
     padding-bottom: 20px;
@@ -151,15 +152,27 @@ footer{
     margin-top: 30px;
 }
 
-@media (max-width: 768px){
+@media ( max-width: 768px){
     section {
         padding: 10px;
     }
     h2{
-        text-align: center;
+        width: 98vw;
+        font-size: 1em;
+        line-height: normal;
+        text-align: left ;
     }
-    section > p{
+    p , section.img p{
         font-family: var(--font2);
         width: 90vw;
+        text-align: justify;
+        font-size: 16px;
+    }
+    p.button{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .img{
+        height: 400px!important;
     }
 }

@@ -159,12 +159,6 @@ footer{
     }
     section > p{
         font-family: var(--font2);
-        max-width: 600px;
-    }
-    section.normal{
-        background-color: white;
-        color: black;
-        min-width:70% ;
-        max-width: 30%;   
+        margin: auto;
     }
 }

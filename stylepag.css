@@ -54,6 +54,29 @@ main > .info{
     border: 2px black;
     box-shadow: 5px 5px 5px black;
 }
+@media ( max-width: 768px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    section{
+        margin:auto;
+    }
+    main > .info {
+        width: 90vw;
+        margin: 10px;
+        padding: 5px 5px 5px 5px;
+        text-align: left;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.651);
+
+    }
+    p a{
+        text-align: left;
+        margin: 5px;
+        padding: 5px;
+    }
+}
 
 
 

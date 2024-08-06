@@ -152,8 +152,19 @@ footer{
 }
 
 @media (max-width: 768px){
-    p{
-        margin: 0px;
-        max-width: 90%;
+    section {
+        padding: 10px;
+        line-height: 1.3em;
+        text-align: justify;
+    }
+    section > p{
+        font-family: var(--font2);
+        max-width: 600px;
+    }
+    section.normal{
+        background-color: white;
+        color: black;
+        min-width:70% ;
+        max-width: 30%;   
     }
 }

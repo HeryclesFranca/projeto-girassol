@@ -8,7 +8,6 @@
     --cor2:rgb(59, 85, 21);
 }
 
-
 * {
     margin: 0px;
     padding: opx;
@@ -20,7 +19,6 @@ html, body {
 header {
     background-color: var(--cor2);
     color: rgb(255, 254, 168);  
-
 }
 header > p{
     padding-bottom: 20px;
@@ -52,8 +50,6 @@ header > h2{
     font-size: 1.5em;
     text-align: center; 
 }
-
-
 section {
     padding: 20vh 0vh 20vh 30px;
     line-height: 2em;
@@ -62,23 +58,20 @@ section {
 }
 section > p{
     font-family: var(--font2);
-    
+    max-width: 600px;
 }
 section.normal{
     background-color: white;
     color: black;
     min-width:70% ;
-    max-width: 30%;
-    
-    
+    max-width: 30%;   
 }
 section.img{
     background-color: slategrey;
     color: white;
     box-shadow: inset 6px 6px 13px 0 black;
     background-attachment: fixed;
-    height: auto;
-    
+    height: auto;    
 }
 section.img >  p{
     display: inline-block;
@@ -101,15 +94,6 @@ section.video{
     background-position: right center;
     background-size: cover;
 }
-
-footer{
-    background-color: rgb(59, 85, 21) ;
-    text-align: right;
-    color: var(--cor1);
-    padding: 20px 0px;
-    margin-top: 30px;
-}
-
 .img-cnt {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente as imagens */
@@ -157,6 +141,20 @@ aside{
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.397);
     margin:  auto;
-    max-width: 1000px;    
-    
+    max-width: 1000px;       
+}
+footer{
+    background-color: rgb(59, 85, 21) ;
+    text-align: right;
+    color: var(--cor1);
+    padding: 20px 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px){
+    p{
+        padding: 10px;
+        margin: 0px;
+        max-width: 90%;
+    }
 }

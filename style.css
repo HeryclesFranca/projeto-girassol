@@ -154,11 +154,12 @@ footer{
 @media (max-width: 768px){
     section {
         padding: 10px;
-        line-height: 1.3em;
-        text-align: justify;
+    }
+    h2{
+        text-align: center;
     }
     section > p{
         font-family: var(--font2);
-        margin: auto;
+        width: 90vw;
     }
 }

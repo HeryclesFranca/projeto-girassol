@@ -10,7 +10,7 @@
 
 * {
     margin: 0px;
-    padding: opx;
+    padding: 0px;
 }
 
 html, body {
@@ -172,6 +172,7 @@ footer{
     p.button{
         display:flex;
         flex-wrap: wrap;
+        gap: 5px
     }
     section.img{
         height: 400px;
@@ -182,5 +183,10 @@ footer{
     }
     .caption  {
         text-align: center !important;
+    }
+    .link{
+        padding: 3px;
+        min-width: 88px;
+        
     }
 }
